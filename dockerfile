@@ -1,7 +1,7 @@
 FROM  ubuntu:latest
-MAINTAINER vikashashoke@gmail.com
+MAINTAINER arjun91.ym@gmail.com
 RUN yum install -y httpd \
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip 
 WORKDIR /var/www/html/
 RUN unzip photogenic.zip
 RUN cp -rvf photogenic/* .
