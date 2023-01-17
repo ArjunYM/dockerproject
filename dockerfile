@@ -1,5 +1,4 @@
 FROM centos
-RUN apt install -y wget
 RUN mkdir mydata
 cmd ["echo", "this is to check centos"]
  
