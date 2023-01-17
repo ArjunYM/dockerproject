@@ -1,6 +1,9 @@
-FROM centos
-RUN mkdir mydata
-cmd ["echo", "this is to check centos"]
+FROM ubuntu 
+MAINTAINER arjun91.ym@gmail.com 
+
+RUN apt-get update 
+RUN apt-get install –y nginx 
+CMD [“echo”,”Image created”]
  
  
 # FROM  centos:latest
